@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'ProximaNova_reg';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+@keyframes fade-in{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+body{
+    /* background-color: #00979d; */
+    font-family: 'ProximaNova_reg' ;
+    
+}
+
+
+.main-frame{
+    position: relative;
+    width: 90%;
+    height: 80vh;
+    background: url("../img/arduino_img.jpg") no-repeat center;
+    background-size: cover;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10vh;
+}
+
+h1{
+    position: absolute;
+    left: 40%;
+    top: -6%;
+    font-size: 40px;
+    color: #00979d;
+}
+
+.atmega{
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 44%;
+    height: 17%;
+    top: 67%;
+    left: 48%;
+}
+.modal-atmega{
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    padding: 10px;
+    width: 550px;
+    height: 250px;
+    border: 5px solid #00979d;
+    border-radius: 20px;
+    background-color: #fff;
+    animation: fade-in 1s;
+}
+.modal-atmega ul{
+    display: inline-block;
+    margin-right: 50px;
+}
+.modal-atmega h2{
+    color: #00979d;
+    padding-left: 25px;
+}
+.close-btn{
+    position: absolute;
+    top:-60px;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 5px solid #00979d;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0.8;
+}
+.close-btn:hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+.close-btn img{
+    width: 60%;
+    height: 60%;
+    margin-top: 10px;
+}
+.img{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: url("../img/ATMEGA.jpg") center no-repeat;
+    background-size: cover;
+}
