@@ -21,13 +21,14 @@ body{
 
 .main-frame{
     position: relative;
-    width: 90%;
-    height: 80vh;
+    width: 1000px;
+    height: 800px;
     background: url("../img/arduino_img.jpg") no-repeat center;
-    background-size: cover;
+    background-size: contain;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 10vh;
+    border: 1px solid red;
 }
 
 h1{
@@ -52,7 +53,7 @@ h1{
     border: 5px solid #00979d;
     border-radius: 50%;
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 .close-btn:hover{
     opacity: 1;
@@ -66,30 +67,53 @@ h1{
 }
 .atmega{
     position: absolute;
-    /* border: 1px solid red; */
-    width: 44%;
-    height: 17%;
-    top: 67%;
-    left: 48%;
+    border: 1px solid red;
+    width: 440px;
+    height: 115px;
+    top: 500px;
+    left: 480px;
 }
 .analog{
     position: absolute;
-    /* border: 1px solid red; */
-    width: 250px;
-    height: 90px;
-    top: 88%;
-    left: 72%;
+    border: 1px solid red;
+    width: 200px;
+    height: 80px;
+    top: 640px;
+    left: 750px;
 }
 .digital{
     position: absolute;
-    /* border: 1px solid red; */
-    width: 580px;
+    border: 1px solid red;
+    width: 500px;
     height: 50px;
-    top: 5%;
-    left: 47%;
+    top: 85px;
+    left: 470px;
+}
+.pwm{
+    position: absolute;
+    border: 1px solid red;
+    width: 200px;
+    height: 40px;
+    top: 180px;
+    left: 670px;
 }
 
-
+.serial{
+    position: absolute;
+    border: 1px solid red;
+    width: 70px;
+    height: 60px;
+    top: 160px;
+    left: 880px;
+}
+.power{
+    position: absolute;
+    border: 1px solid red;
+    width: 180px;
+    height: 80px;
+    top: 640px;
+    left: 550px;
+}
 
 
 .modal-atmega{
@@ -117,21 +141,48 @@ h1{
     background-size: cover;
 }
 
-.modal-analog, .modal-digital{
+.modal-analog, .modal-digital, .modal-pwm, .modal-serial{
     position: absolute;
-    top:53%;
-    left: 45%;
-    transform: translate(-40%, -50%);
     padding: 10px;
-    width: 850px;
-    height: 550px;
     border: 5px solid #00979d;
     border-radius: 20px;
     background-color: #fff;
     animation: fade-in 1s;
 }
-.modal-analog p{
-    padding: 0 20px;;
+
+.modal-analog{
+    top:53%;
+    left: 45%;
+    transform: translate(-40%, -50%);
+    width: 800px;
+    height: 550px;
+}
+.modal-digital{
+    top:53%;
+    left: 45%;
+    transform: translate(-40%, -50%);
+    width: 750px;
+    height: 450px;
+}
+.modal-pwm{
+    top:55%;
+    left: 45%;
+    transform: translate(-40%, -50%);
+    width: 850px;
+    height: 450px;
+}
+.modal-serial{
+    top: 62%;
+    left: 45%;
+    transform: translate(-40%, -50%);
+    width: 750px;
+    height: 400px;
+}
+
+
+p{
+    padding: 0 20px;
+    text-align: justify;
 }
 .wrapper{
     display: flex;
@@ -142,7 +193,7 @@ h1{
     width: 400px;
     height: 300px;
     background: url("../img/analog.jpg") center no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 
@@ -153,6 +204,23 @@ h1{
     background: url("../img/digital.jpg") center no-repeat;
     background-size: contain;
 }
+
+.img-pwm{
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    background: url("../img/pwm.png") center no-repeat;
+    background-size: contain;
+}
+
+.img-serial{
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    background: url("../img/txrx.png") center no-repeat;
+    background-size: contain;
+}
+
 .sensors{
     display: flex;
     width: 320px;

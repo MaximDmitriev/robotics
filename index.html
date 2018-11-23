@@ -13,8 +13,8 @@
         <div class="pwm"></div>
         <div class="digital"></div>
         <div class="analog"></div>
-        <div class="plus"></div>
-        <div class="gnd"></div>
+        <!-- <div class="plus"></div>
+        <div class="gnd"></div> -->
         <div class="atmega"></div>
         <div class="serial"></div>
         <div class="usb"></div>
@@ -66,7 +66,7 @@
     </div>
 
     <div class="modal-digital">
-        <h2 class="modal-title">Цифровый входы/выходы</h2>
+        <h2 class="modal-title">Цифровые входы/выходы</h2>
         <p>
             Цифровые пины (14 штук) предназначены для обработки цифровых сигналов сигналов. Могут работать в двух
             режимах: на прием сигнала (INPUT) и на вывод сигнала (OUTPUT). Используются для приема сигналов с кнопок,
@@ -90,6 +90,53 @@
             <img src="./img/close-button.svg" alt="close">
         </div>
     </div>
+
+    <div class="modal-pwm">
+        <h2 class="modal-title">Цифровые пины ШИМ</h2>
+        <p>
+            Цифровые пины ШИМ (помеченные <strong><sub>~</sub></strong> ) предназначены для использования широтно-импульсной модуляции.
+            Именно с помощью этих пинов мы можем управлять сервоприводами, менять яркость светодиодов,
+            громкость, скорость вращения и многое другое.
+        </p>
+        <div class="wrapper">
+            <div class="img-pwm">
+            </div>
+            <div class="sensors">
+                <img src="./img/servo.jpg" alt="servo">
+                <img src="./img/mshield.jpg" alt="mshield">
+                <img src="./img/dinamic.jpg" alt="dinamic">
+                <!-- <img src="./img/line_sensor.jpg" alt="line_sensor"> -->
+                <!-- <img src="./img/ultrasonic_sensor.jpg" alt="ultrasonic">
+                <img src="./img/pot.jpg" alt="pot"> -->
+            </div>
+        </div>
+        
+        <div class="close-btn">
+            <img src="./img/close-button.svg" alt="close">
+        </div>
+    </div>
+
+    <div class="modal-serial">
+        <h2 class="modal-title">Последовательный порт RX/TX</h2>
+        <p>
+            Пины 0 и 1 помимо того, что являются цифровыми портами вводв/вывода, также представляют собой последовательный порт.
+            Он необходим для подключения bluetooth-модулей, WiFi-модулей, подключения второй платы или для подключения
+            любых других устройств, которые работают через последовательный порт.
+        </p>
+        <div class="wrapper">
+            <div class="img-serial">
+            </div>
+            <div class="sensors">
+                <img src="./img/bluetooth.jpg" alt="bluetooth">
+                <img src="./img/wifi.jpg" alt="wifi">
+            </div>
+        </div>
+        
+        <div class="close-btn">
+            <img src="./img/close-button.svg" alt="close">
+        </div>
+    </div>
+    
     
 
     <script src="./js/main.js"></script>
