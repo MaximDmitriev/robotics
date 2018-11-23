@@ -22,7 +22,7 @@
     </div>
 
     <div class="modal-atmega">
-        <h2>Atmega 328P</h2>
+        <h2 class="modal-title">Atmega 328P</h2>
         <ul>
             <li>Ширина шины данных: 8 бит</li>
             <li>Тактовая частота: 20 мгц</li>
@@ -32,8 +32,60 @@
             <li>Рабочая температура: -40...+85С</li>
             <li>Встроенные интерфейсы: 	i2c, spi, uart</li>
         </ul>
-        <div class="img">
+        <div class="img-atmega">
         </div>
+        
+        <div class="close-btn">
+            <img src="./img/close-button.svg" alt="close">
+        </div>
+    </div>
+
+    <div class="modal-analog">
+        <h2 class="modal-title">Аналоговые входы</h2>
+        <p>
+            Аналоговые пины (6 штук) предназначены для обработки аналоговых сигналов. Их используют для 
+            подключения таких датчиков как датчик температуры, света, звука и т.д. С помощью АЦП (аналого-цифрового преобразователя) 
+            сигнал с этих датчиков преобразуется в цифровой и мы можем с ним работать.
+        </p>
+        <div class="wrapper">
+            <div class="img-analog">
+            </div>
+            <div class="sensors">
+                <img src="./img/light_sensor.jpg" alt="ligth">
+                <img src="./img/motoin_sensor.jpg" alt="motion">
+                <img src="./img/sound_sensor.jpg" alt="sound">
+                <img src="./img/temp_sensor.jpg" alt="temperature">
+                <img src="./img/ultrasonic_sensor.jpg" alt="ultrasonic">
+                <img src="./img/pot.jpg" alt="pot">
+            </div>
+        </div>
+        
+        <div class="close-btn">
+            <img src="./img/close-button.svg" alt="close">
+        </div>
+    </div>
+
+    <div class="modal-digital">
+        <h2 class="modal-title">Цифровый входы/выходы</h2>
+        <p>
+            Цифровые пины (14 штук) предназначены для обработки цифровых сигналов сигналов. Могут работать в двух
+            режимах: на прием сигнала (INPUT) и на вывод сигнала (OUTPUT). Используются для приема сигналов с кнопок,
+            для управления реле, светодиодов, приема сигналов с цифровыхдатчиков. <br>
+            Имеют два состояния включено (HIGH, true, 1) и выключено (LOW, false, 0).
+        </p>
+        <div class="wrapper">
+            <div class="img-digital">
+            </div>
+            <div class="sensors">
+                <img src="./img/led.jpg" alt="led">
+                <img src="./img/relay.JPG" alt="relay">
+                <img src="./img/btn.jpg" alt="btn">
+                <img src="./img/line_sensor.jpg" alt="line_sensor">
+                <!-- <img src="./img/ultrasonic_sensor.jpg" alt="ultrasonic">
+                <img src="./img/pot.jpg" alt="pot"> -->
+            </div>
+        </div>
+        
         <div class="close-btn">
             <img src="./img/close-button.svg" alt="close">
         </div>
