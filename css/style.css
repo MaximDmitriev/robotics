@@ -15,6 +15,7 @@
 body{
     /* background-color: #00979d; */
     font-family: 'ProximaNova_reg' ;
+    box-sizing: border-box;
     
 }
 
@@ -28,7 +29,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     margin-top: 10vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 h1{
@@ -65,9 +66,29 @@ h1{
     height: 60%;
     margin-top: 10px;
 }
+
+.pwm-btn{
+    color: #00979d;
+    position: absolute;
+    top:60px;
+    right: -100px;
+    width: 80px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 5px solid #00979d;
+    border-radius: 20px;
+    text-align: center;
+    /* opacity: 0.6; */
+    cursor: pointer;
+}
+.pwm-btn h2{
+    margin-top: 10px;
+}
+
+
 .atmega{
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 440px;
     height: 115px;
     top: 500px;
@@ -75,7 +96,7 @@ h1{
 }
 .analog{
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 200px;
     height: 80px;
     top: 640px;
@@ -83,7 +104,7 @@ h1{
 }
 .digital{
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 500px;
     height: 50px;
     top: 85px;
@@ -91,7 +112,7 @@ h1{
 }
 .pwm{
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 200px;
     height: 40px;
     top: 180px;
@@ -100,7 +121,7 @@ h1{
 
 .serial{
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 70px;
     height: 60px;
     top: 160px;
@@ -108,7 +129,7 @@ h1{
 }
 .power{
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 180px;
     height: 80px;
     top: 640px;
@@ -116,7 +137,7 @@ h1{
 }
 
 
-.modal-atmega{
+.modal-atmega, .modal-power{
     position: absolute;
     top:45%;
     left: 50%;
@@ -176,7 +197,7 @@ h1{
     left: 45%;
     transform: translate(-40%, -50%);
     width: 750px;
-    height: 400px;
+    height: 450px;
 }
 
 
@@ -230,4 +251,31 @@ p{
 .sensors img{
     /* width: 150px; */
     height: 120px;
+}
+.pwm-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.pwm-high, .pwm-low{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+.pwm-high{
+    border: 3px solid rgb(128, 10, 175);
+    border-bottom: none;
+}
+.pwm-low{
+    border-bottom: 3px solid rgb(128, 10, 175);
+    /* border-left: 1px solid red;
+    border-right: 1px solid red; */
+}
+.wheel{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url("../img/wheel.jpg") center;
+    background-size: contain;
+    transition: all 0.1s;
 }
